@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+    </script>
+    <main
+      class="w-full h-[800px] bg-amber-50 relative mt-16 flex justify-center"
+    >
+      <section class="ContainerPhoto bg-amber-50 w-5/6 h-full">
+        <div
+          class="Profile text-black font-bold pb-6 font-serif text-3xl text-center mt-12"
+        >
+          Profile
+        </div>
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="PhotoCon1 w-full bg-amber-50 mt-8 flex flex-wrap justify-around"
+        >
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full overflow-hidden w-24 bg-white h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656671/Aaron_nmtaix.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Aaron
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 overflow-hidden bg-white h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656668/Togi_ibgggf.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Togi
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656666/bryan_ftstat.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Bryan
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656664/Carmello_poic2q.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Carmello
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white h-24 overflow-hidden">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656663/Clairine_jiym5g.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Clairine
+            </div>
+          </div>
+        </div>
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
+          class="PhotoCon1 w-full bg-amber-50 mt-10 flex flex-wrap justify-around"
+        >
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white h-24 overflow-hidden">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656660/Pierson_wy46wp.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Pierson
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656658/Darren_ubdd96.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Darren
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="overflow-hidden rounded-full w-24 bg-white h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656656/Ezra_pui3mn.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Ezra
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="overflow-hidden rounded-full w-24 bg-white h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656656/Felix_yhxba4.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Felix
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656652/Gerald_ajvl1k.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Gerald
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000"
+          class="PhotoCon1 w-full bg-amber-50 mt-10 flex flex-wrap justify-around"
+        >
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656652/Jared_xo7pxh.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Jared
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656651/Kevin_lmv8j2.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Kevin
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656648/Levi_jmdx2n.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Levi
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656646/Trifosa_jtulx3.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Trifosa
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656647/Phoebe_obvjbt.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Phoebe
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000"
+          class="PhotoCon1 w-full bg-amber-50 mt-10 flex flex-wrap justify-evenly"
+        >
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656647/Maxwell_o8p8ty.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Maxwell
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656647/Timsit_t5hyna.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Timsit
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742656646/Vincent_wwddqn.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Vincent
+            </div>
+          </div>
+          <div class="bg-amber-50 w-24 h-32">
+            <div class="rounded-full w-24 bg-white overflow-hidden h-24">
+              <img
+                class="object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742657442/Josephine_qgswgt.png"
+                alt=""
+              />
+            </div>
+            <div class="nameStudents text-center font-serif text-xl text-black">
+              Josephine
+            </div>
+          </div>
+        </div>
+      </section>
+      <img
+        class="absolute top-0 opacity-40 w-80 pr-10"
+        src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742446881/undraw_personal-info_yzls_gusnyg.svg"
+        alt=""
+      />
+    </main>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

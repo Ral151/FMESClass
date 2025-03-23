@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+
+    <main>
+      <nav
+        class="NavBar flex items-center justify-around border-b-2 border-black w-full h-16 bg-amber-100"
+      >
+        <div
+          class="LogoCon bg-amber-100 flex flex-row w-36 justify-around ml-4 h-12"
+        >
+          <p
+            class="text-center w-14 h-12 mt-2 text-2xl font-bold font-serif text-black"
+          >
+            FMES
+          </p>
+          <img
+            class="w-12"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742394041/WhatsApp_Image_2025-03-19_at_13.09.45_wrrfqz.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="navbarCon pl-12 bg-amber-100 flex justify-between items-center w-96 h-14"
+        >
+          <div
+            class="bg-amber-100 text-center text-lg self-center font-serif text-black"
+          >
+            <a href="AboutUs.html"
+              ><div class="text-black mt-1">About Us</div>
+            </a>
+          </div>
+          <div class="bg-amber-100 text-center text-lg text-black font-serif">
+            <a href="Profile.html">
+              <div class="text-black justify-self-center m-1 self-center">
+                Profile
+              </div>
+            </a>
+          </div>
+          <div class="bg-amber-100 self-center">
+            <a
+              href="https://www.instagram.com/fmes_on_top?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              ><img
+                class="w-8 m-1 justify-self-center"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742362990/instagram_eii8vk.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="relative w-full mx-auto overflow-hidden">
+          <div id="carousel-container" class="overflow-hidden">
+            <div
+              id="carousel"
+              class="flex transition-transform duration-500 ease-in-out"
+            >
+              <div class="flex-shrink-0 w-full">
+                <img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742029792/WhatsApp_Image_2024-06-13_at_4.58.36_PM_lkfgxp.jpg"
+                  alt="Slide 1"
+                  class="w-full h-[562px] object-cover"
+                />
+              </div>
+              <div class="flex-shrink-0 w-full">
+                <img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742030010/IMG-20241211-WA0017_q9ox4o.jpg"
+                  alt="Slide 2"
+                  class="w-full h-[562px] object-cover"
+                />
+              </div>
+              <div class="flex-shrink-0 w-full">
+                <img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742030095/IMG_8371_ko1nfe.jpg"
+                  alt="Slide 3"
+                  class="w-full h-[562px] object-cover"
+                />
+              </div>
+              <div class="flex-shrink-0 w-full">
+                <img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742033106/E3A80070-220A-4CF1-8489-3D4D0A104B17-25277-00000AE8154E56DF_e1j0ro.jpg"
+                  alt="Slide 4"
+                  class="w-full h-[562px] object-cover"
+                />
+              </div>
+              <div class="flex-shrink-0 w-full">
+                <img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742033211/IMG-20250125-WA0014_pryyjf.jpg"
+                  alt="Slide 5"
+                  class="w-full h-[562px] object-cover"
+                />
+              </div>
+              <!-- Duplicate First Slide -->
+              <div class="flex-shrink-0 w-full">
+                <img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742029792/WhatsApp_Image_2024-06-13_at_4.58.36_PM_lkfgxp.jpg"
+                  alt="Slide 1 Duplicate"
+                  class="w-full h-[562px] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            id="prev"
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full"
+          >
+            &#10094;
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full"
+          >
+            &#10095;
+          </button>
+
+          <div
+            class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2"
+          >
+            <span
+              class="dot w-3 h-3 bg-gray-400 rounded-full transition-all"
+            ></span>
+            <span
+              class="dot w-3 h-3 bg-gray-400 rounded-full transition-all"
+            ></span>
+            <span
+              class="dot w-3 h-3 bg-gray-400 rounded-full transition-all"
+            ></span>
+            <span
+              class="dot w-3 h-3 bg-gray-400 rounded-full transition-all"
+            ></span>
+            <span
+              class="dot w-3 h-3 bg-gray-400 rounded-full transition-all"
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const carousel = document.getElementById("carousel");
+          const slides = document.querySelectorAll("#carousel > div");
+          const prevButton = document.getElementById("prev");
+          const nextButton = document.getElementById("next");
+          const dots = document.querySelectorAll(".dot");
+
+          let currentIndex = 0;
+          let slideInterval;
+          let isTransitioning = false;
+          const slideCount = slides.length - 1; // Exclude duplicated slide
+
+          // Set initial position
+          carousel.style.transform = `translateX(0%)`;
+
+          // Update Active Dot
+          const updateDots = () => {
+            dots.forEach((dot, index) => {
+              dot.classList.toggle("bg-gray-800", index === currentIndex);
+              dot.classList.toggle("bg-gray-400", index !== currentIndex);
+            });
+          };
+
+          // Move to Slide
+          const moveToSlide = (index, withTransition = true) => {
+            if (withTransition) {
+              carousel.style.transition = "transform 0.5s ease-in-out";
+            } else {
+              carousel.style.transition = "none";
+            }
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+          };
+
+          // Next Slide Function
+          const nextSlide = () => {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            currentIndex++;
+
+            moveToSlide(currentIndex);
+
+            // If it's the last duplicated slide, reset position instantly
+            if (currentIndex === slideCount) {
+              setTimeout(() => {
+                carousel.style.transition = "none";
+                currentIndex = 0;
+                moveToSlide(currentIndex, false);
+              }, 500);
+            }
+
+            updateDots();
+            setTimeout(() => (isTransitioning = false), 500);
+          };
+
+          // Previous Slide Function (Make it move right when going from first to last)
+          const prevSlide = () => {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            currentIndex--;
+
+            // If moving from first slide to last, jump to duplicate instantly
+            if (currentIndex < 0) {
+              carousel.style.transition = "none";
+              currentIndex = slideCount - 1;
+              moveToSlide(currentIndex, false);
+              setTimeout(() => {
+                carousel.style.transition = "transform 0.5s ease-in-out";
+                currentIndex = slideCount - 2;
+                moveToSlide(currentIndex);
+              }, 20);
+            } else {
+              moveToSlide(currentIndex);
+            }
+
+            updateDots();
+            setTimeout(() => (isTransitioning = false), 500);
+          };
+
+          // Start Auto-Slide
+          const startAutoSlide = () => {
+            slideInterval = setInterval(nextSlide, 4000);
+          };
+
+          // Stop Auto-Slide on Interaction & Restart After 5s
+          const resetAutoSlide = () => {
+            clearInterval(slideInterval);
+            setTimeout(startAutoSlide, 4000);
+          };
+
+          // Pause Auto-Slide on Hover
+          carousel.addEventListener("mouseenter", () =>
+            clearInterval(slideInterval)
+          );
+          carousel.addEventListener("mouseleave", startAutoSlide);
+
+          nextButton.addEventListener("click", () => {
+            nextSlide();
+            resetAutoSlide();
+          });
+
+          prevButton.addEventListener("click", () => {
+            prevSlide();
+            resetAutoSlide();
+          });
+
+          // Click on Dots to Change Slide
+          dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+              currentIndex = index;
+              moveToSlide(currentIndex);
+              resetAutoSlide();
+            });
+          });
+
+          // Start Everything
+          updateDots();
+          startAutoSlide();
+        });
+      </script>
+
+      <section
+        class="recreationTimeline h-lvh w-full relative bg-gray-100 flex justify-evenly items-center"
+      >
+        <div
+          data-aos="zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="50"
+          data-aos-offset="0"
+          class="textTimeCon flex justify-center items-center ml-12 w-96 h-1/2 bg-gray-100"
+        >
+          <div class="text-black text-3xl font-bold">
+            Recreation
+            <div class="texttime text-3xl font-bold text-blue-700"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.querySelector(".texttime");
+                const text = "Documentation";
+                let index = 0;
+                let isDeleting = false;
+
+                function typeWriter() {
+                  if (!isDeleting) {
+                    textElement.innerHTML = text.substring(0, index);
+                    index++;
+                    if (index > text.length) {
+                      isDeleting = true;
+                      setTimeout(typeWriter, 1300);
+                      return;
+                    }
+                  } else {
+                    // Deleting effect
+                    textElement.innerHTML = text.substring(0, index);
+                    index--;
+                    if (index === 1) {
+                      isDeleting = false;
+                    }
+                  }
+                  setTimeout(typeWriter, isDeleting ? 50 : 100); // Typing and deleting speed
+                }
+
+                typeWriter();
+              });
+            </script>
+          </div>
+        </div>
+
+        <ul
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-duration="1000"
+          class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+        >
+          <li>
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-start mb-10 md:text-end">
+              <time class="font-mono italic font-bold text-black"
+                >1 May 2024</time
+              >
+              <div class="text-lg font-black mt-2">
+                <a href="ancol.html"
+                  ><button class="btn btn-dash btn-primary btn-outline">
+                    Ancol
+                  </button></a
+                >
+              </div>
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-end md:mb-10">
+              <time class="font-mono italic font-bold text-black"
+                >2 January 2025</time
+              >
+              <div class="text-lg font-black">
+                <a href="bandung.html"
+                  ><button class="btn mt-2 btn-primary btn-dash btn-outline">
+                    Bandung
+                  </button></a
+                >
+              </div>
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-start mb-10 md:text-end">
+              <time class="font-mono italic font-bold text-black"
+                >8 March 2025</time
+              >
+              <a href="MAG.html"
+                ><div class="mt-2 text-lg font-black">
+                  <button class="btn-dash btn btn-primary btn-outline">
+                    MAG (Karaoke)
+                  </button>
+                </div></a
+              >
+            </div>
+          </li>
+        </ul>
+        <div
+          class="h-32 w-32 absolute rounded-full top-0 right-0 rounded-t-none rounded-br-none bg-indigo-600"
+        ></div>
+        <img
+          class="absolute bottom-0 left-0"
+          src="https://www.ristek.cs.ui.ac.id/homepage/hero/hero-bottom-left.svg"
+          alt=""
+        />
+        <img
+          class="absolute bottom-32 left-56 w-96 opacity-20"
+          src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742132363/undraw_through-the-park_xcqx_m2ahwx.svg"
+          alt=""
+        />
+        <img
+          class="absolute opacity-20 bottom-2 right-2"
+          src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742222727/undraw_alarm-clock_xooxcd.svg"
+          alt=""
+        />
+      </section>
+
+      <section
+        class="introPhotoCon relative overflow-hidden h-[600px] w-full flex-col items-center bg-white flex"
+      >
+        <div class="conIntro mb-6 mt-6">
+          <div class="typewriterWraper w-full h-12">
+            <div class="md:text-3xl font-serif italic font-bold text-black">
+              <span id="typewriter"></span>
+              <span class="animate-blink">|</span>
+            </div>
+          </div>
+          <!-- buat teks dan gambar fis + classmeet -->
+          <script>
+            const textArray = ["Cooperation"];
+            let textIndex = 0;
+            let charIndex = 0;
+            const typewriterElement = document.getElementById("typewriter");
+
+            function type() {
+              if (charIndex < textArray[textIndex].length) {
+                typewriterElement.textContent +=
+                  textArray[textIndex][charIndex];
+                charIndex++;
+                setTimeout(type, 100);
+              } else {
+                setTimeout(erase, 2000);
+              }
+            }
+
+            function erase() {
+              if (charIndex > 0) {
+                typewriterElement.textContent = textArray[textIndex].substring(
+                  0,
+                  charIndex - 1
+                );
+                charIndex--;
+                setTimeout(erase, 50);
+              } else {
+                textIndex = (textIndex + 1) % textArray.length;
+                setTimeout(type, 500);
+              }
+            }
+
+            type();
+          </script>
+
+          <style>
+            @keyframes blink {
+              50% {
+                opacity: 0;
+              }
+            }
+            .animate-blink {
+              animation: blink 1s infinite;
+            }
+          </style>
+
+          <div class="textintro"></div>
+        </div>
+        <div class="ConGotongRoyong bg-white mb-8 w-[900px] h-[300px]">
+          <div class="textGotongRoyong text-center font-bold text-black">
+            Gotong royong adalah konsep kerjasama yang mendalam di masyarakat
+            Indonesia, di mana individu bekerja sama untuk mencapai sebuah
+            tujuan bersama tanpa memandang latar belakang sesama ataupun meminta
+            imbalan. Konsep dari Gotong royong ini tidak hanya sekedar tindakan
+            fisik, tetapi juga mencerminkan nilai-nilai solidaritas, kepedulian,
+            dan kekeluargaan yang tinggi di antara anggota masyarakat. Sikap ini
+            mencerminkan bangsa ini seutuhnya yang juga terbentuk melalui
+            persatuan dan gotong royong dari banyak pihak yang berbeda-beda.
+            Sama halnya dengan kelas ini yang terbilang memiliki banyak anggota
+            yang kepribadiannya bermacam-macam dan berasal dari latar belakang
+            yang berbeda juga, tetapi mampu mengesampingkan semuanya dan bekerja
+            sama untuk menghasilkan pekerjaan yang satu padu. Walaupun memang
+            kadang ada beberapa perselisihan, tetapi tiap anggota dalam kelas
+            ini dapat menemukan solusi dari permasalahan tersebut sehingga
+            setiap pekerjaan yang ditugaskan dapat diselesaikan dengan baik.
+            Gotong Royong yang kerap dilakukan bersama turut membentuk kelas ini
+            dari yang sebelumnya seakan terpisah-pisah menjadi satu keluarga
+            yang semakin dekat dan harmonis.
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="ConPhotoGR bg-white w-[980px] h-96 flex justify-between overflow-hidden"
+        >
+          <div class="w-80 relative h-full">
+            <a href="Physics.html">
+              <img
+                class="border-slate-400 shadow-md brightness-90 shadow-slate-700 w-80 opacity-80 mr-4 rounded-lg h-full object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263777/WhatsApp_Image_2025-03-04_at_10.10.40_2_aj2zsr.jpg"
+                alt=""
+              />
+              <div
+                class="physics flex inset-0 text-white drop-shadow-lg text-2xl font-bold justify-center self-center absolute"
+              >
+                Physics
+              </div>
+            </a>
+          </div>
+          <div class="w-80 relative h-full">
+            <a href="PKN.html">
+              <img
+                class="border-slate-400 shadow-md brightness-90 shadow-slate-700 w-80 h-full opacity-85 rounded-lg object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742264400/WhatsApp_Image_2025-03-17_at_15.41.26_jyu5un.jpg"
+                alt=""
+              />
+              <div
+                class="PKN flex inset-0 text-white drop-shadow-lg text-2xl font-bold justify-center self-center absolute"
+              >
+                PKN
+              </div>
+            </a>
+          </div>
+          <div class="w-80 relative h-full">
+            <a href="Classmeet2023.html">
+              <img
+                class="border-slate-400 brightness-90 opacity-70 shadow-md shadow-slate-700 w-80 ml-1 h-full rounded-lg object-cover"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742265585/IMG_0537_cjz4a4.jpg"
+                alt=""
+              />
+              <div
+                class="classmeet flex inset-0 text-white drop-shadow-lg text-2xl font-bold justify-center self-center absolute"
+              >
+                Classmeet
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="-z-1 absolute bottom-3 right-3 h-24 w-24 rounded-full bg-white bg-gradient-to-b from-white to-indigo-600 opacity-20"
+        ></div>
+        <div
+          class="-z-1 absolute top-3 left-1 h-32 w-32 rounded-full bg-white bg-gradient-to-b from-white to-indigo-600 opacity-20"
+        ></div>
+        <img
+          class="absolute right-3 top-0"
+          src="https://www.ristek.cs.ui.ac.id/about/incubator-1.svg"
+          alt=""
+        />
+      </section>
+
+      <!-- profile -->
+      <section
+        class="profileCon relative h-96 w-full bg-white flex justify-center pt-12 pb-12"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="stats shadow-lg shadow-slate-800"
+        >
+          <div class="stat bg-white w-64">
+            <div class="stat-figure text-primary">
+              <div class="avatar">
+                <div class="w-14 rounded-full">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/RistekCSUI/cdn/assets/2024/icons/person.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="stat-title text-black font-bold">Total Students</div>
+            <div class="stat-value text-primary justify-self-center">19</div>
+            <div class="stat-desc text-black font-bold"></div>
+          </div>
+
+          <div class="stat bg-white">
+            <div class="stat-figure text-secondary">
+              <div class="avatar">
+                <div class="w-28 rounded-full">
+                  <img
+                    src="https://sekolahkristencalvin.org/web/image/6477-76f648c0/Denni-Yulius-Matematika-square-scaled.webp"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="stat-title font-bold text-black">
+              Former Homeroom Teacher
+            </div>
+            <div class="stat-title text-secondary text-blue-500 font-bold">
+              Denni Yulius Girsang S.Pd.
+            </div>
+            <div class="stat-desc font-bold text-black">2023-2024</div>
+          </div>
+
+          <div class="stat bg-white">
+            <div class="stat-figure text-secondary">
+              <div class="avatar">
+                <div class="w-28 rounded-full">
+                  <img
+                    src="https://sekolahkristencalvin.org/web/image/6476-027e7fa5/Haryono-Tafianto-Sejarah-square.webp"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="stat-title text-black font-bold">Homeroom Teacher</div>
+            <div class="stat-title font-bold text-blue-500">
+              Haryono Tafianto B.A., M.Ed.
+            </div>
+            <div class="stat-desc text-black font-bold">2024-Present</div>
+          </div>
+        </div>
+        <div
+          class="-z-1 absolute bottom-3 left-3 h-16 w-16 rounded-full bg-white bg-gradient-to-b from-white to-indigo-600 opacity-20"
+        ></div>
+        <img
+          class="absolute opacity-60 w-24 right-3 bottom-0"
+          src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742731016/Data_Visualization_nktpd6.png"
+          alt=""
+        />
+      </section>
+
+      <footer
+        class="flex items-center justify-between p-4 bg-amber-50 border-t border-gray-300"
+      >
+        <p class="text-gray-600">©FMES 2023-2025</p>
+        <div class="flex space-x-4"></div>
+      </footer>
+    </main>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

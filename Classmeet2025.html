@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+    </script>
+
+    <main
+      class="bg-amber-50 h-[2000px] overflow-hidden relative mt-16 w-full flex flex-col items-center"
+    >
+      <section
+        class="AllCon w-[880px] h-[280px] mt-8 flex flex-col items-center"
+      >
+        <div class="conTitle text-black font-bold font-serif text-3xl">
+          Classmeet 2025
+        </div>
+        <div class="textCon bg-yellow-100 mt-8 w-full border-2 border-black">
+          <p class="text-black font-serif text-justify m-2">
+            Dalam classmeet terakhir ini, FMES menunjukan kerjasama yang sangat
+            baik di dalam event kali ini. Dengan berbagai macam perlombaan yang
+            bervariasi, setiap perwakilan FMES yang dipercayakan untuk mewakili
+            kelas dalam cabangnya masing-masing berusaha sekeras mungkin untuk
+            memenangkan setiap lomba classmeet saat itu. Dari awal, kelas kita
+            memiliki antusias dan sebuah tekad untuk membawa piala classmeet
+            tahun ini, sekaligus classmeet terakhir sebagai murid SKC. Kami
+            saling mendukung dan menyemangati teman-teman yang sedang bertanding
+            di kala waktu senggang kami. Bahkan, wali kelas kami Pak Hary dan
+            mantan wali kelas kami yakni Pak Denni juga turut berbagian
+            mewaklili FMES dalam classmeet ini. Dengan semangat bersama, semua
+            kerja keras itu terbayarkan dengan hasil yang membanggakan. Kami
+            mampu untuk memperoleh juara satu pertama sekaligus terakhir kami
+            sebagai siswa SKC.
+          </p>
+        </div>
+      </section>
+      <section
+        class="AllPhotoCon w-[1100px] relative mt-16 h-full grid overflow-hidden grid-cols-5 grid-flow-row gap-x-4 gap-y-0"
+      >
+        <div
+        data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-span-2 overflow-hidden h-96 border border-slate-300 bg-white"
+        >
+          <img
+            class="object-cover border-b border-b-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626334/P1160042_szqqx7.jpg"
+            alt=""
+          />
+          <p class="m-2 text-2xl font-bold font-serif text-black">
+            Class Photo
+          </p>
+          <p class="ml-2 text-black mr-2 font-serif">
+            Seperti biasa, sebelum classmeet dimulai kami melakukan foto kelas
+            bersama terlebih dahulu.
+          </p>
+        </div>
+        <div
+        data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-span-3 h-[480px] relative border border-slate-300 bg-white flex flex-wrap justify-start items-start"
+        >
+          <img
+            class="object-cover w-1/2 h-44 object-bottom border-b-4 border-b-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626304/DSC00025_hdzoug.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover w-1/2 h-44 object-bottom border-l-4 border-b-4 border-b-slate-300 border-l-slate-300 border-r border-t"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626304/DSC00021_eg6iir.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover w-1/2 h-44 object-top absolute top-44"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626301/DSC00002_q8ykjb.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover w-1/2 h-44 object-top top-44 right-0 absolute border-l-4 border-l-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626306/DSC00027_ijnxa5.jpg"
+            alt=""
+          />
+          <p
+            class="ml-2 text-2xl absolute bottom-[84px] font-bold font-serif text-black"
+          >
+            Estafet
+          </p>
+          <p class="ml-2 text-black mr-2 absolute bottom-1 font-serif">
+            Pada pertandingan estafet, kelas kami memiliki banyak perwakilan di
+            tiap aktivitas dalam lomba ini dan kami mampu walaupun kami tidak
+            memperoleh juara, tetapi kami bersama-sama berhasil menyelesaikan
+            pertandingan ini hingga akhir.
+          </p>
+        </div>
+        <div
+        data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-span-2 overflow-hidden -mt-24 h-[445px] border border-slate-300 bg-white"
+        >
+          <img
+            class="object-cover border-b border-b-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626317/DSC08902_jnxzkp.jpg"
+            alt=""
+          />
+          <p class="m-2 text-2xl font-bold font-serif text-black">Volley</p>
+          <p class="ml-2 text-black mr-2 font-serif">
+            Dalam Cabor ini, kami diwakilkan oleh beberapa anggota kami yang
+            tergolong jago bermain voli dan pada babak penyisihan kami berhasil
+            untuk mengalahkan semua lawan kami bersama-sama hingga akhirnya di
+            partai final kami juga mampu untuk memenangkan pertandingan dan
+            meraih juara pertama.
+          </p>
+        </div>
+        <div
+        data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-span-3 h-[325px] relative border border-slate-300 bg-white flex flex-wrap justify-start items-start"
+        >
+          <img
+            class="object-cover w-1/2 h-44 object-bottom border-b-4 border-b-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626308/DSC00121_ddqz66.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover w-1/2 h-44 object-bottom border-l-4 border-b-4 border-b-slate-300 border-l-slate-300 border-r border-t"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626306/DSC00119_jg9xde.jpg"
+            alt=""
+          />
+
+          <p class="ml-2 text-2xl font-bold font-serif text-black">Basket</p>
+          <p class="ml-2 text-black mr-2 font-serif">
+            Pada pertandingan basket kali ini Pak Hary dan Pak Deni turut
+            berbagian untuk membantu kami melawan kelas lain yang punya anggota
+            lebih banyak daripada kita. Walaupun, kami gagal untuk mendapatkan
+            juara dalam pertandingan basket, tetapi kami mampu untuk bekerja
+            sama dan menunjukkan kekompakan satu sama lain.
+          </p>
+        </div>
+        <div
+        data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-span-2 overflow-hidden h-[700px] border border-slate-300 bg-white"
+        >
+          <img
+            class="object-cover border-b object-bottom border-b-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742631551/DSC09111_ge0wvn.jpg"
+            alt=""
+          />
+          <p class="m-2 text-2xl font-bold font-serif text-black">
+            Pengumuman Juara
+          </p>
+          <p class="ml-2 text-black mr-2 font-serif">
+            Pada pengumuman juara classmeet kali ini kami tidak berekspektasi
+            untuk menjadi juara 1 karena ada beberapa cabor yang kalah. Namun,
+            pada saat pengumuman ternyata kami berhasil menjadi juara 1 pada
+            classmeet terakhir kami ini dan pengambilan piala diwakili oleh
+            teman kami Togi.
+          </p>
+        </div>
+        <div
+        data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-span-3 h-[325px] relative border -mt-6 border-slate-300 bg-white flex flex-wrap justify-start items-start"
+        >
+          <img
+            class="object-cover w-1/2 h-44 object-bottom border-b-4 border-b-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626327/IMG_8621_yyb8je.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover w-1/2 h-44 object-top border-l-4 border-b-4 border-b-slate-300 border-l-slate-300 border-r border-t"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626324/IMG_8619_nmmd8b.jpg"
+            alt=""
+          />
+
+          <p class="ml-2 text-2xl font-bold font-serif text-black">Badminton</p>
+          <p class="ml-2 text-black mr-2 font-serif">
+            Dalam cabor badminton, kelas kami diwakili oleh Clairine dan Jared.
+            Sementara sisa anggota lainnya yang sedang tidak berlomba datang
+            untuk memberi semangat mereka. Walaupun mereka kalah di partai
+            final, tetapi mereka berhasil menyumbang poin bagi kelas kami dengan
+            menjadi juara 2 pada cabor ini.
+          </p>
+        </div>
+        <div
+        data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-span-3 h-[325px] absolute w-[650px] bottom-20 right-0 border border-slate-300 bg-white flex flex-wrap justify-start items-start"
+        >
+          <img
+            class="object-cover w-1/2 h-44 object-bottom border-b-4 border-b-slate-300"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626314/DSC00404_j30ejh.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover w-1/2 h-44 object-top border-l-4 border-b-4 border-b-slate-300 border-l-slate-300 border-r border-t"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742626312/DSC00397_jp2cfn.jpg"
+            alt=""
+          />
+
+          <p class="ml-2 text-2xl font-bold font-serif text-black">Futsal</p>
+          <p class="ml-2 text-black mr-2 font-serif">
+            Pada cabor futsal, kelas kami diwakili oleh beberapa anggota
+            termasuk Pak Denni yang juga turut bermain membantu kami. Pada
+            perlombaan ini kami mampu bekerja sama dengan baik dan memperoleh
+            juara 2.
+          </p>
+        </div>
+      </section>
+      <img class="absolute right-0 top-0" src="https://www.ristek.cs.ui.ac.id/about/incubator-1.svg" alt="">
+      <img class="absolute left-0 top-0 w-44 -mt-14 -ml-2 " src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742647927/ribbon-silhouette_2_goj6aj.png" alt="">
+    </main>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>
