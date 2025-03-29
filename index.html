@@ -8,6 +8,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -23,6 +24,7 @@
     </style>
 
     <main>
+      <!-- Navbar section -->
       <nav
         class="NavBar flex items-center justify-around border-b-2 border-black w-full h-16 bg-amber-100"
       >
@@ -47,12 +49,12 @@
             class="bg-amber-100 text-center text-lg self-center font-serif text-black"
           >
             <a href="AboutUs.html"
-              ><div class="text-black mt-1">About Us</div>
+              ><div class="text-black mt-1 hover:underline">About Us</div>
             </a>
           </div>
           <div class="bg-amber-100 text-center text-lg text-black font-serif">
             <a href="Profile.html">
-              <div class="text-black justify-self-center m-1 self-center">
+              <div class="text-black hover:underline justify-self-center m-1 self-center">
                 Profile
               </div>
             </a>
@@ -69,6 +71,7 @@
           </div>
         </div>
       </nav>
+      <!-- Hero section -->
       <section class="hero">
         <div class="relative w-full mx-auto overflow-hidden">
           <div id="carousel-container" class="overflow-hidden">
@@ -111,7 +114,7 @@
                   class="w-full h-[562px] object-cover"
                 />
               </div>
-              <!-- Duplicate First Slide -->
+
               <div class="flex-shrink-0 w-full">
                 <img
                   src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742029792/WhatsApp_Image_2024-06-13_at_4.58.36_PM_lkfgxp.jpg"
@@ -278,6 +281,7 @@
         });
       </script>
 
+      <!-- Timeline section -->
       <section
         class="recreationTimeline h-lvh w-full relative bg-gray-100 flex justify-evenly items-center"
       >
@@ -309,14 +313,13 @@
                       return;
                     }
                   } else {
-                    // Deleting effect
                     textElement.innerHTML = text.substring(0, index);
                     index--;
                     if (index === 1) {
                       isDeleting = false;
                     }
                   }
-                  setTimeout(typeWriter, isDeleting ? 50 : 100); // Typing and deleting speed
+                  setTimeout(typeWriter, isDeleting ? 50 : 100);
                 }
 
                 typeWriter();
@@ -378,7 +381,7 @@
             </div>
             <div class="timeline-end md:mb-10">
               <time class="font-mono italic font-bold text-black"
-                >2 January 2025</time
+                >27 Desember 2024</time
               >
               <div class="text-lg font-black">
                 <a href="bandung.html"
@@ -439,7 +442,7 @@
           alt=""
         />
       </section>
-
+      <!-- Team work section -->
       <section
         class="introPhotoCon relative overflow-hidden h-[600px] w-full flex-col items-center bg-white flex"
       >
@@ -450,7 +453,7 @@
               <span class="animate-blink">|</span>
             </div>
           </div>
-          <!-- buat teks dan gambar fis + classmeet -->
+
           <script>
             const textArray = ["Gotong Royong"];
             let textIndex = 0;
@@ -581,7 +584,7 @@
         />
       </section>
 
-      <!-- profile -->
+      <!-- profile section -->
       <section
         class="profileCon relative h-96 w-full bg-white flex justify-center pt-12 pb-12"
       >
@@ -651,6 +654,7 @@
         />
       </section>
 
+      <!-- Footer -->
       <footer
         class="flex items-center justify-between p-4 bg-amber-50 border-t border-gray-300"
       >
