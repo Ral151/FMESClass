@@ -171,12 +171,10 @@
           let currentIndex = 0;
           let slideInterval;
           let isTransitioning = false;
-          const slideCount = slides.length - 1; // Exclude duplicated slide
+          const slideCount = slides.length - 1; 
 
-          // Set initial position
           carousel.style.transform = `translateX(0%)`;
 
-          // Update Active Dot
           const updateDots = () => {
             dots.forEach((dot, index) => {
               dot.classList.toggle("bg-gray-800", index === currentIndex);
@@ -184,7 +182,6 @@
             });
           };
 
-          // Move to Slide
           const moveToSlide = (index, withTransition = true) => {
             if (withTransition) {
               carousel.style.transition = "transform 0.5s ease-in-out";
@@ -194,7 +191,6 @@
             carousel.style.transform = `translateX(-${index * 100}%)`;
           };
 
-          // Next Slide Function
           const nextSlide = () => {
             if (isTransitioning) return;
             isTransitioning = true;
@@ -202,7 +198,6 @@
 
             moveToSlide(currentIndex);
 
-            // If it's the last duplicated slide, reset position instantly
             if (currentIndex === slideCount) {
               setTimeout(() => {
                 carousel.style.transition = "none";
@@ -215,13 +210,11 @@
             setTimeout(() => (isTransitioning = false), 500);
           };
 
-          // Previous Slide Function (Make it move right when going from first to last)
           const prevSlide = () => {
             if (isTransitioning) return;
             isTransitioning = true;
             currentIndex--;
 
-            // If moving from first slide to last, jump to duplicate instantly
             if (currentIndex < 0) {
               carousel.style.transition = "none";
               currentIndex = slideCount - 1;
@@ -239,18 +232,15 @@
             setTimeout(() => (isTransitioning = false), 500);
           };
 
-          // Start Auto-Slide
           const startAutoSlide = () => {
             slideInterval = setInterval(nextSlide, 4000);
           };
 
-          // Stop Auto-Slide on Interaction & Restart After 5s
           const resetAutoSlide = () => {
             clearInterval(slideInterval);
             setTimeout(startAutoSlide, 4000);
           };
 
-          // Pause Auto-Slide on Hover
           carousel.addEventListener("mouseenter", () =>
             clearInterval(slideInterval)
           );
@@ -266,7 +256,6 @@
             resetAutoSlide();
           });
 
-          // Click on Dots to Change Slide
           dots.forEach((dot, index) => {
             dot.addEventListener("click", () => {
               currentIndex = index;
