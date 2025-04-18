@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+    </script>
+    <main
+      class="bg-amber-50 h-[1300px] mt-16 w-full relative flex justify-center"
+    >
+      <section
+        class="AllCon bg-amber-50 absolute w-[1050px] h-[500px] mt-8 flex flex-col items-center"
+      >
+        <div class="conTitle text-black font-bold font-serif text-3xl">
+          Fisika Maket
+        </div>
+        <div
+          class="textCon bg-yellow-100 h-[240px] mt-8 w-full border-2 border-black"
+        >
+          <p class="text-black font-serif text-justify m-2">
+            Pada hari itu, satu kelas 12 FMES datang di hari libur nasional
+            (Pemilihan Gubernur) untuk mengerjakan proyek Fisika yang berupa
+            membuat sebuah maket arsitektur dengan rangkaian lampu. Setiap
+            individu memiliki tugas dan tanggung jawabnya masing-masing di dalam
+            kelompok mereka. Ada yang menggambar sketsa, menyusun rangka,
+            merakit kabel listrik, hingga memastikan lampu-lampu menyala sesuai
+            desain yang direncanakan. Proyek ini tidak hanya melatih teknik dan
+            ketelitian tiap anggota saja, tetapi juga sikap gotong royong dan
+            kerja sama kami. Kesabaran dan komunikasi juga menjadi kunci dalam
+            menyelesaikan proyek ini dengan baik. Namun, hari itu bukan hanya
+            tentang tugas dan tanggung jawab saja. Di sela-sela kesibukan,
+            kebersamaan antar semakin terasa ketika kami menonton berbagai genre
+            film bersama sembari mengerjakan proyek fisika kami. Momen ini
+            menjadi sesuatu yang berkesan bagi kami di mana kami sekelas masuk
+            bersama-sama pada hari libur untuk mengerjakan proyek.
+          </p>
+        </div>
+        <div
+        
+          class="Photo Con relative h-[1300px] w-full flex flex-wrap justify-start"
+        >
+          <div class="p-5 sm:p-8">
+            <div
+              class="columns-1 gap-2 sm:columns-2 sm:gap-4 !-- md:columns-3 [&>img:not(:first-child)]:mt-8"
+            >
+              <!-- md:columns-3 lg:columns-4 -->
+              <img
+              
+                class="border-2 border-black"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263777/WhatsApp_Image_2025-03-04_at_10.10.41_1_hmexv4.jpg"
+                alt=""
+              />
+              <img
+                class="border-2 border-black"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263751/WhatsApp_Image_2025-03-04_at_10.08.47_uoqczh.jpg"
+                alt=""
+              />
+              <img
+                class="absolute left-32 bottom-20"
+                src="https://www.ristek.cs.ui.ac.id/homepage/hero/hero-bottom-right.svg"
+                alt=""
+              />
+              <img
+                class="border-2 border-black"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263778/WhatsApp_Image_2025-03-04_at_10.10.41_wfizbj.jpg"
+                alt=""
+              />
+              <img
+                class="border-2 border-black"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263778/WhatsApp_Image_2025-03-04_at_10.10.40_1_hcr5on.jpg"
+                alt=""
+              />
+              <img
+                class="border-2 border-black"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263777/WhatsApp_Image_2025-03-04_at_10.10.40_2_aj2zsr.jpg"
+                alt=""
+              />
+              <img
+                class="border-2 border-black"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263776/WhatsApp_Image_2025-03-04_at_10.08.46_ovh5uk.jpg"
+                alt=""
+              />
+              <img
+                class="border-2 border-black"
+                src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742263782/WhatsApp_Image_2025-03-04_at_10.10.40_toeido.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

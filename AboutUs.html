@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+    </script>
+
+    <section
+      class="con w-full h-[1000px] mt-16 bg-amber-50 flex justify-center relative"
+    >
+      <main
+        class="conPhoto&About overflow-hidden mx-auto relative bg-amber-50 flex items-center flex-col w-[900px] h-[1000px]"
+      >
+        <div
+          class="bg-amber-50 w-40 m-12 text-center text-black font-bold font-mono text-3xl h-12"
+        >
+          About Us
+        </div>
+        <div class="photo w-full">
+          <img
+            class="h-[400px] w-full border-2 border-black object-cover object-bottom"
+            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742365827/IMG-20240319-WA0028_zeazuy.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="textAboutUs1 bg-yellow-100 border-r-2 border-l-2 border-b-2 border-black w-full h-[380px]"
+        >
+          <p class="mt-6 ml-6 mr-6 text-black font-serif text-justify">
+            Dalam lembaran terakhir perjalanan kita di SMA, begitu banyak
+            kenangan yang telah terukir terlewat begitu saja. Namun, kenangan
+            tersebut tidak pernah hilang. Bersama, kita telah melewati suka dan
+            duka, pergumulan dan kebahagian, konflik dan rekonsiliasi. Menulis
+            sebuah cerita bersama dalam lembaran buku masing-masing yang akan
+            selalu membekas dalam hati setiap anggota. FMES bukan hanya sekedar
+            kelas di mana setiap orang hanya datang dan pulang untuk belajar,
+            tapi lebih dari itu, kita adalah keluarga. Sebuah ikatan yang tidak
+            akan pernah pudar walau tergerus waktu.
+          </p>
+          <p class="mt-4 ml-6 mr-6 font-serif text-black text-justify">
+            Melalui proyek ini, kami ingin menghadirkan tempat di mana setiap
+            dari kita dapat kembali menelusuri jejak langkah yang pernah kita
+            lalui. Sebuah tempat untuk mengingat bahwa di dalam kebersamaan ini,
+            ada peran yang tak tergantikan, ada tawa yang tak terlupakan, dan
+            ada makna yang terus hidup.
+          </p>
+          <p class="mt-4 ml-6 mr-6 font-serif text-black text-justify">
+            Laman ini adalah sarana bagi kita untuk menilik kembali kebersamaan,
+            harmoni, kekeluargaan, dan semangat gotong-royong yang pernah
+            menghangatkan hari-hari kita. Sebuah jendela ke masa lalu, agar kita
+            takkan pernah lupa bahwa kita pernah berjalan bersama.
+          </p>
+        </div>
+      </main>
+      <img
+        class="absolute bottom-0 right-0"
+        src="https://www.ristek.cs.ui.ac.id/about/incubator-2.svg"
+        alt=""
+      />
+      <img
+        class="absolute top-2 left-2/6 w-40 opacity-30"
+        src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742392512/undraw_season-change_ohe6_hlakx3.svg"
+        alt=""
+      />
+    </section>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>
