@@ -32,50 +32,40 @@
         .catch((error) => console.error("Error loading navbar:", error));
     </script>
     <main
-      class="bg-amber-50 h-[820px] mt-16 relative w-full flex justify-center"
+      class="bg-amber-50 h-[770px] mt-16 relative w-full flex justify-center"
     >
       <section
         class="AllCon w-[1050px] left-48 mt-8 flex flex-col items-center"
       >
         <div class="conTitle text-black font-bold font-serif text-3xl">
-          Remembering FMES
+          Ruang Kenangan
         </div>
         <div
-          class="conTextVid bg-yellow-100 w-[800px] h-[630px] mt-12 border-black border-2"
+          class="conTextVid bg-yellow-100 w-[800px] h-[580px] mt-12 border-black border-2"
         >
-          <iframe
-            class="border-b-2 border-black"
-            width="796"
-            height="450"
-            src="https://www.youtube.com/embed/cffLbWVsVps?si=VhMLS2OWIM8Mk9Yx"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <p class="text-black text-lg font-serif m-3 text-justify">
-            Video ini dibuat oleh kelompok 1 dengan tujuan untuk mengenang
-            momen-momen indah yang telah kita lalui bersama di FMES. Dalam Video
-            ini kami menampilkan kilas balik sebagai cara mengabadikan momen
-            indah bersama. Dalam video ini, ada momen kebersamaan, kenangan, dan
-            perjalanan FMES selama 2 tahun bersama. Selain itu, video ini juga
-            dapat menjadi kenangan yang dapat dikenang di masa depan serta
-            memberikan inspirasi bagi adik-adik kelas.
+          <div
+            class="w-full border-b-2 border-black aspect-video overflow-hidden shadow-lg"
+          >
+            <iframe
+              width="796"
+              height="450"
+              src="https://www.youtube.com/embed/X2UuRGIQABo?si=hpk9Vhp-ckj31xKK"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="m-2 text-black text-lg font-serif">
+            Lagu indah ini diciptakan oleh kelompok 3 untuk mengenang semua momen indah yang
+            pernah dilalui oleh kelas FMES. Lagu ini dibuat dengan lirik yang
+            catchy sehingga kita semua dapat menghafal sekaligus mengingat momen
+            dengan mudah. Dengan diputarnya lagu ini, diharapkan dapat memberi
+            kehangatan bagi mereka yang mendengarnya.
           </p>
-        </div>
-      </section>
-      <a href="RuangKenangan.html"
-        ><button
-          class="btn absolute btn-warning border-none btn-outline right-10 top-24 w-24 flex flex-row justify-around"
-        >
-          <img
-            src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1742561486/undraw_arrow_ucaewr.svg"
-            alt=""
-          />
-        </button>
-      </a>
-      <a href="PKN.html"
+
+          <a href="RememberingFMES.html"
             ><button
               class="btn absolute btn-warning border-none btn-outline left-10 top-24 w-24 flex flex-row justify-around"
             >
@@ -85,6 +75,8 @@
               />
             </button>
           </a>
+        </div>
+      </section>
       <img
         class="absolute bottom-4 right-8"
         src="https://www.ristek.cs.ui.ac.id/homepage/hero/hero-bottom-right.svg"
